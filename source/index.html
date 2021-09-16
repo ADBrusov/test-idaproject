@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Тестовое задание idaproject">
+  <title>Тестовое задание idaproject</title>
+  <link rel="preload" href="fonts/Source-sans-pro-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Source-sans-pro-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Inter-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<section class="catalog">
+
+  <h1 class="visually-hidden">Каталог товаров</h1>
+  <section class="catalog__form-wrap">
+    <h2 class="catalog__form-title">Добавление товара</h2>
+    <form class="catalog__form add-form" method="post">
+      <div class="add-form__field add-form__field--name">
+        <label for="name">Наименование товара</label>
+        <input type="text" name="name" id="name" data-error="Поле является обязвательным" required autocomplete="off"
+               aria-label="Наименование товара" placeholder="Введите наименование товара">
+      </div>
+      <div class="add-form__field add-form__field--description">
+        <label for="description">Описание товара</label>
+        <textarea name="description" id="description" autocomplete="off" aria-label="Описание товара"
+                  placeholder="Введите описание товара"></textarea>
+      </div>
+      <div class="add-form__field add-form__field--image">
+        <label for="image">Ссылка на изображение товара</label>
+        <input type="text" name="image" id="image" data-error="Поле является обязвательным" required autocomplete="off"
+               aria-label="Ссылка на изображение товара" placeholder="Введите ссылку">
+      </div>
+      <div class="add-form__field add-form__field--price">
+        <label for="price">Цена товара</label>
+        <input type="number" name="price" id="price" data-error="Поле является обязвательным" required
+               autocomplete="off" aria-label="Цена товара" placeholder="Введите цену">
+      </div>
+      <button class="add-form__button button" type="submit">Добавить товар</button>
+    </form>
+  </section>
+
+  <section class="catalog__list-wrap">
+    <div class="catalog__sort-wrap">
+      <select class="catalog__sort">
+        <option>По умолчанию</option>
+      </select>
+    </div>
+    <ul class="catalog__list">
+      <li class="catalog__item product">
+        <div class="product__image">
+          <img src="../img/product.jpg" width="332" height="200" alt="Изображение товара">
+        </div>
+        <div class="product__text">
+          <h3 class="product__title">Наименование товара</h3>
+          <p class="product__description">
+            Довольно-таки интересное описание товара в несколько строк. Довольно-таки
+            интересное описание товара в несколько строк
+          </p>
+          <p class="product__price"><span class="product__price-number">10 000</span> руб.</p>
+        </div>
+      </li>
+      <li class="catalog__item product">
+        <div class="product__image">
+          <img src="../img/product.jpg" width="332" height="200" alt="Изображение товара">
+        </div>
+        <div class="product__text">
+          <h3 class="product__title">Наименование товара</h3>
+          <p class="product__description">
+            Довольно-таки интересное описание товара в несколько строк. Довольно-таки
+            интересное описание товара в несколько строк
+          </p>
+          <p class="product__price"><span class="product__price-number">10 000</span> руб.</p>
+        </div>
+      </li>
+      <li class="catalog__item product">
+        <div class="product__image">
+          <img src="../img/product.jpg" width="332" height="200" alt="Изображение товара">
+        </div>
+        <div class="product__text">
+          <h3 class="product__title">Наименование товара</h3>
+          <p class="product__description">
+            Довольно-таки интересное описание товара в несколько строк. Довольно-таки
+            интересное описание товара в несколько строк
+          </p>
+          <p class="product__price"><span class="product__price-number">10 000</span> руб.</p>
+        </div>
+      </li>
+      <li class="catalog__item product">
+        <div class="product__image">
+          <img src="../img/product.jpg" width="332" height="200" alt="Изображение товара">
+        </div>
+        <div class="product__text">
+          <h3 class="product__title">Наименование товара</h3>
+          <p class="product__description">
+            Довольно-таки интересное описание товара в несколько строк. Довольно-таки
+            интересное описание товара в несколько строк
+          </p>
+          <p class="product__price"><span class="product__price-number">10 000</span> руб.</p>
+        </div>
+      </li>
+      <li class="catalog__item product">
+        <div class="product__image">
+          <img src="../img/product.jpg" width="332" height="200" alt="Изображение товара">
+        </div>
+        <div class="product__text">
+          <h3 class="product__title">Наименование товара</h3>
+          <p class="product__description">
+            Довольно-таки интересное описание товара в несколько строк. Довольно-таки
+            интересное описание товара в несколько строк
+          </p>
+          <p class="product__price"><span class="product__price-number">10 000</span> руб.</p>
+        </div>
+      </li>
+      <li class="catalog__item product">
+        <div class="product__image">
+          <img src="../img/product.jpg" width="332" height="200" alt="Изображение товара">
+        </div>
+        <div class="product__text">
+          <h3 class="product__title">Наименование товара</h3>
+          <p class="product__description">
+            Довольно-таки интересное описание товара в несколько строк. Довольно-таки
+            интересное описание товара в несколько строк
+          </p>
+          <p class="product__price"><span class="product__price-number">10 000</span> руб.</p>
+        </div>
+      </li>
+      <li class="catalog__item product">
+        <div class="product__image">
+          <img src="../img/product.jpg" width="332" height="200" alt="Изображение товара">
+        </div>
+        <div class="product__text">
+          <h3 class="product__title">Наименование товара</h3>
+          <p class="product__description">
+            Довольно-таки интересное описание товара в несколько строк. Довольно-таки
+            интересное описание товара в несколько строк
+          </p>
+          <p class="product__price"><span class="product__price-number">10 000</span> руб.</p>
+        </div>
+      </li>
+      <li class="catalog__item product">
+        <div class="product__image">
+          <img src="../img/product.jpg" width="332" height="200" alt="Изображение товара">
+        </div>
+        <div class="product__text">
+          <h3 class="product__title">Наименование товара</h3>
+          <p class="product__description">
+            Довольно-таки интересное описание товара в несколько строк. Довольно-таки
+            интересное описание товара в несколько строк
+          </p>
+          <p class="product__price"><span class="product__price-number">10 000</span> руб.</p>
+        </div>
+      </li>
+      <li class="catalog__item product">
+        <div class="product__image">
+          <img src="../img/product.jpg" width="332" height="200" alt="Изображение товара">
+        </div>
+        <div class="product__text">
+          <h3 class="product__title">Наименование товара</h3>
+          <p class="product__description">
+            Довольно-таки интересное описание товара в несколько строк. Довольно-таки
+            интересное описание товара в несколько строк
+          </p>
+          <p class="product__price"><span class="product__price-number">10 000</span> руб.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</section>
+</body>
+</html>

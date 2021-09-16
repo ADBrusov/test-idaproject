@@ -1,0 +1,70 @@
+.add-form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  color: $gun-powder;
+  background-color: $floral-white;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.04), 0 6px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+}
+
+.add-form__field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 16px;
+  &:last-of-type {
+    margin: 0 0 24px;
+  }
+}
+
+.add-form__field label {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: -0.02em;
+  margin: 0 0 4px;
+}
+
+.add-form__field input,
+.add-form__field textarea {
+  padding: 10px 16px 11px;
+  background: $floral-white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: $eclipse;
+  &::placeholder {
+    color: $pink-swan;
+  }
+}
+
+.add-form__field--description textarea {
+  resize: none;
+  min-height: 108px;
+}
+
+.add-form__button {
+  background-color: $amulet;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: $white;
+  border: none;
+  padding: 10px 0 11px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    transition: all 0.5s ease;
+    color: $amulet;
+    background-color: $white;
+    transform: scale(1.02, 1.02);
+  }
+}
