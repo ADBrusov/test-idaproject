@@ -1,10 +1,13 @@
 .product {
   display: flex;
   flex-direction: column;
-  max-width: 332px;
   background-color: $floral-white;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.04), 0 6px 10px rgba(0, 0, 0, 0.02);
   border-radius: 4px;
+}
+
+.product__image img {
+  width: 100%;
 }
 
 .product__text {

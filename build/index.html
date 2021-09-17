@@ -18,7 +18,7 @@
   <section class="catalog__form-wrap">
     <h2 class="catalog__form-title">Добавление товара</h2>
     <form class="catalog__form add-form" method="post">
-      <div class="add-form__field add-form__field--name">
+      <div class="add-form__field add-form__field--name add-form__field--required">
         <label for="name">Наименование товара</label>
         <input type="text" name="name" id="name" data-error="Поле является обязвательным" required="" autocomplete="off" aria-label="Наименование товара" placeholder="Введите наименование товара">
       </div>
@@ -26,11 +26,11 @@
         <label for="description">Описание товара</label>
         <textarea name="description" id="description" autocomplete="off" aria-label="Описание товара" placeholder="Введите описание товара"></textarea>
       </div>
-      <div class="add-form__field add-form__field--image">
+      <div class="add-form__field add-form__field--image add-form__field--required">
         <label for="image">Ссылка на изображение товара</label>
         <input type="text" name="image" id="image" data-error="Поле является обязвательным" required="" autocomplete="off" aria-label="Ссылка на изображение товара" placeholder="Введите ссылку">
       </div>
-      <div class="add-form__field add-form__field--price">
+      <div class="add-form__field add-form__field--price add-form__field--required">
         <label for="price">Цена товара</label>
         <input type="number" name="price" id="price" data-error="Поле является обязвательным" required="" autocomplete="off" aria-label="Цена товара" placeholder="Введите цену">
       </div>

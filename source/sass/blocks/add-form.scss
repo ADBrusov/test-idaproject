@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 0 16px;
+
   &:last-of-type {
     margin: 0 0 24px;
   }
@@ -23,6 +24,8 @@
   line-height: 13px;
   letter-spacing: -0.02em;
   margin: 0 0 4px;
+  position: relative;
+  width: fit-content;
 }
 
 .add-form__field input,
@@ -30,20 +33,45 @@
   padding: 10px 16px 11px;
   background: $floral-white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border: none;
+  border: 0.5px solid $floral-white;
   border-radius: 4px;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: $eclipse;
+
   &::placeholder {
     color: $pink-swan;
+  }
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &:focus {
+    background-color: $white;
+    border: 0.5px solid $amulet;
+    outline: none;
   }
 }
 
 .add-form__field--description textarea {
   resize: none;
   min-height: 108px;
+}
+
+.add-form__field--required label {
+  &::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    right: -4px;
+    border-radius: 4px;
+    background-color: #FF8484;
+  }
 }
 
 .add-form__button {
@@ -65,6 +93,5 @@
     transition: all 0.5s ease;
     color: $amulet;
     background-color: $white;
-    transform: scale(1.02, 1.02);
   }
 }
