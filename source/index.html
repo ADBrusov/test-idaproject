@@ -22,6 +22,7 @@
         <label for="name">Наименование товара</label>
         <input type="text" name="name" id="name" data-error="Поле является обязвательным" required autocomplete="off"
                aria-label="Наименование товара" placeholder="Введите наименование товара">
+        <span></span>
       </div>
       <div class="add-form__field add-form__field--description">
         <label for="description">Описание товара</label>
@@ -30,15 +31,17 @@
       </div>
       <div class="add-form__field add-form__field--image add-form__field--required">
         <label for="image">Ссылка на изображение товара</label>
-        <input type="text" name="image" id="image" data-error="Поле является обязвательным" required autocomplete="off"
+        <input type="url" name="image" id="image" data-error="Поле является обязвательным" required autocomplete="off"
                aria-label="Ссылка на изображение товара" placeholder="Введите ссылку">
+        <span></span>
       </div>
       <div class="add-form__field add-form__field--price add-form__field--required">
         <label for="price">Цена товара</label>
         <input type="number" name="price" id="price" data-error="Поле является обязвательным" required
                autocomplete="off" aria-label="Цена товара" placeholder="Введите цену">
+        <span></span>
       </div>
-      <button class="add-form__button button" type="submit">Добавить товар</button>
+      <button class="add-form__button button" type="submit" disabled>Добавить товар</button>
     </form>
   </section>
 

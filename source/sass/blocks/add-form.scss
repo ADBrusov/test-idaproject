@@ -39,6 +39,8 @@
   font-size: 12px;
   line-height: 15px;
   color: $eclipse;
+  transition: 0.5s ease all;
+  position: relative;
 
   &::placeholder {
     color: $pink-swan;
@@ -48,10 +50,27 @@
     background-color: $white;
   }
 
-  &:focus {
+  &:focus:valid {
     background-color: $white;
     border: 0.5px solid $amulet;
     outline: none;
+  }
+
+  &:focus:invalid {
+    background-color: $white;
+    border: 0.5px solid $light-coral;
+    outline: none;
+
+    & + span {
+      position: relative;
+
+      &::after {
+        content: "Поле является обязательным";
+        position: absolute;
+        font-size: 8px;
+        color: #FF8484;
+      }
+    }
   }
 }
 
