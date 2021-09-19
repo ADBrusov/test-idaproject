@@ -113,4 +113,10 @@
     color: $amulet;
     background-color: $white;
   }
+
+  &:disabled {
+    transition: all 0.5s ease;
+    background: #EEEEEE;
+    color: #B4B4B4;
+  }
 }
